@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const width = 10;
 
-    console.log(blox); 
+    console.log(blox); //checking 
 
     const startButton = document.getElementById('start-button');
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
 
-    
+    //  menu
 
     toggle.addEventListener('click', () => {
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    
+    // create 
 
     soundButton.addEventListener('click', () => {
 
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
+   
 
     startButton.addEventListener('click', () => {
 
@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function turnShape() {
 
-        undraw(); 
+        undraw();  
 
         currentRotation++; 
 
@@ -454,12 +454,79 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    
+    /* limited coding experience resulted in this bugged code.           
+
+                * I tried coding a display grid to show the upNext tetrimino for the player, but failed to get it to display 
+
+                * correctly. Due to limited knowledge and experience with JS, I opted to comment this 
+
+                * block of code out and return to it at a later date, as a future update, when I have
+
+                * the sufficient skill level 
+
+                * ***************************************************************************************************************
+
+                //create a next up display grid so the player knows which tetrimino is falling next
+
+                const nextBlox = document.querySelectorAll('.display-grid div');
+
+                const nextWidth = 4; // define the size of the display grid 
+
+                let nextIndex = 0;
+
+                console.log(nextBlox); //check that the display grid is correct
+
+            
+
+                //create the first position of the tetrimino in the display grid so the player can see whats up next
+
+                const nextTetrimino = [ 
+
+                    [2, 1, nextWidth + 1, nextWidth * 2 + 1], //pTetrimino
+
+                    [0, 1, nextWidth + 1, nextWidth * 2 + 1], //qTetrimino
+
+                    [nextWidth * 2, nextWidth * 2 + 1, nextWidth + 1, nextWidth + 2], //sTetrimino
+
+                    [nextWidth, nextWidth + 1, nextWidth * 2 + 1, nextWidth * 2 + 2], //zTetrimino
+
+                    [1, nextWidth, nextWidth + 1, nextWidth + 2], //tTetrimino
+
+                    [0, 1, nextWidth, nextWidth + 1], //bTetrimino
+
+                    [1, nextWidth + 1, nextWidth * 2 + 1, nextWidth * 3 + 1]  //iTetrimino
+
+                ]; 
+
+
+                //display next up tetrimino in the display grid
+
+                function nextUp() {
+
+                    nextBlox.forEach( next => {
+
+                        next.classList.remove('tetrimino');
+
+                    });
+
+                    nextTetrimino[nextRandom].forEach(index => {
+
+                        nextBlox[nextIndex + index].classList.add('tetrimino');
+
+                    });
+
+                }
+
+    */
 
 
     
 
-    
+    /** I tried a variety of methods to create a function whereby the players score 
+
+    *  would be taken from the gameOver() and passed to a finalScore that could be stored locally 
+
+   *************************************************************************************************************/
 
     
 
@@ -538,11 +605,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         playerScore.innerHTML = score;
 
                         playerLevel.innerHTML = level;
-					}	
-						if (level += 1) {
-							moveDown += 10;
 
-                    
+                    }
 
                 }
 
@@ -574,7 +638,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function gameOver() {
 
-        if (current.some(index => blox[currentPosition + index].classList.contains('taken'))) {  
+        if (current.some(index => blox[currentPosition + index].classList.contains('taken'))) { 
 
             clearInterval(timerId); 
 
@@ -590,7 +654,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             
 
-            return window.location.assign("indexT.html"); 
+            return window.location.assign("index.html"); 
 
         }
 
