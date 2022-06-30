@@ -26,13 +26,13 @@
 
 <body >
 
-    <!-- navigation-->
+    <!-- navigation elements for User to access instruction, rules and scores-->
 
     <nav class="navbar">
 
         <div class="brand-logo">
 
-            <a href="indexT.html" aria-label="returns the user to the top of the home page">
+            <a href="index.html" aria-label="returns the user to the top of the home page">
 
                 <h2>Tetris JS</h2>
 
@@ -54,11 +54,11 @@
 
             <ul>
 
-                <li> <a href="indexT.html">Zurück</a></li>
+                <li> <a href="index.html">Home</a></li>
 
                 <li> <a href="instructions.html">Instructions</a></li>
 
-                <li> <a class="active" href="tetris.html">Spiele Tetris</a></li>
+                <li> <a class="active" href="tetris.html">Play Tetris</a></li>
 
             </ul>
 
@@ -70,7 +70,7 @@
 
     <section class="gameArea">
 
-        <h2 hidden>Hauptspiel-Rasterbereich</h2>
+        <h2 hidden>main game grid area</h2>
 
         <div class="panels">
 
@@ -95,7 +95,7 @@
 
                 <div class="box-content">
 
-                    <!--  tetris grid -->
+                    <!-- manually creating tetris grid -->
 
                     <div class="grid">
 
@@ -535,29 +535,29 @@
 
                         <span class="keys"><button id="rotate" class="control-btn "
 
-                                aria-label="this button will Rotate the Tetrimino by 90 degrees">Drehe</button></span>
+                                aria-label="this button will Rotate the Tetrimino by 90 degrees">Rotate</button></span>
 
 
 
                         <span class="keys"><button id="left" class="control-btn "
 
-                                aria-label="this button will move the Tetrimino to the Left">links</button></span>
+                                aria-label="this button will move the Tetrimino to the Left">Left</button></span>
 
                         <span class="keys"><button id="right" class="control-btn "
 
-                                aria-label="this button will move the Tetrimino to the Right">rechts</button></span>
+                                aria-label="this button will move the Tetrimino to the Right">Right</button></span>
 
 
 
                         <span class="keys"><button id="down" class="control-btn "
 
-                                aria-label="this button is will move the Tetrimino Down the game grid">unten</button></span>
+                                aria-label="this button is will move the Tetrimino Down the game grid">Down</button></span>
 
                     </div>
 
                     <button id="start-button" class="btn " aria-label="this button will start and pause the game">Start
 
-                        Button</button>
+                        Game</button>
 
                 </div>
 
@@ -569,7 +569,7 @@
 
 
 
-    <!--footer section     -->
+    <!--footer section for social links, copyright information    -->
 
     <footer>
 
@@ -586,15 +586,15 @@
     </footer>
 
 
-    <!--  audio files  -->
+    <!--  audio files and scripts for js and fontawesome -->
 
     <audio src="Tetris-99-Main-Theme.mp3" id="music"
 
-        aria-label="theme song for the classic gameboy Tetris game">Wenn Sie dies sehen, liegt es an Ihrem Browser
+        aria-label="theme song for the classic gameboy Tetris game">If you are seeing this, it is because your browser
 
-         nicht
+        does not
 
-         unterstützt dieses Audioelement</audio>
+        support this audio element</audio>
 
     <script src="assets/js/script.js"></script>
 
