@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             moveRight();
 
-        } else if (event.keyCode === 400) {
+        } else if (event.keyCode === 40) {
 
             moveDown();
 
@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             
 
-            return window.location.assign("index.html"); 
+            return window.location.assign("Tabelle.xhtml"); 
 
         }
 
