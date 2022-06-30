@@ -656,7 +656,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             
 
-            return window.location.assign("index.html"); 
+            return window.location.assign("Tabelle.xhtml"); 
 
         }
 
