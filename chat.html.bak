@@ -1,0 +1,31 @@
+<!-- ./public/index.html -->
+<!DOCTYPE html>
+<html>
+<main>
+  <header>
+    <div class="user-count">0</div>
+    <h1>Tokyo Chat</h1>
+  </header>
+
+  <section class="chat">
+    <p><strong>Pepito</strong>: Hey everyone!</p>
+    <p><strong>親日</strong>: こんいちは！</p>
+  </section>
+
+  <form>
+    <input type="text" placeholder="Say something nice" />
+    <button>Send</button>
+  </form>
+</main>
+
+  <body>
+
+    Hello world
+
+    <!-- Include jquery, cookies, socket.io (client-side) and your own code -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
+    <script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
