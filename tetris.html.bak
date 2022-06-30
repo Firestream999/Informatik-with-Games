@@ -17,7 +17,7 @@
 
     <meta name="keywords" content="tetris, javascript, tetriminos, game, gaming, nostalgia">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Tetris JS - Tetris</title>
 
