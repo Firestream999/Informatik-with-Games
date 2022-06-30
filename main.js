@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             draw();
 
-            timerId = setInterval(moveDown, 1000);
+            timerId = setInterval(moveDown, 10000);
 
             startButton.innerHTML = 'Started'; 
 
@@ -602,7 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         score += 100; 
 						
-						moveDown += 1000;
+						moveDown += 00;
 
                         playerScore.innerHTML = score;
 
