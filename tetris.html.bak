@@ -586,7 +586,7 @@
     </footer>
 
 
-    <!--  audio files  -->
+    <!--  audio files and scripts for js and fontawesome -->
 
     <audio src="assets/audio/Tetris-99-Main-Theme.mp3" id="music"
 
