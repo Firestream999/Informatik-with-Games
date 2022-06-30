@@ -33,5 +33,6 @@
     <script src="https://unpkg.com/cookie_js@1.2.2/cookie.min.js"></script>
     <script src="https://unpkg.com/socket.io-client@2/dist/socket.io.slim.js"></script>
     <script src="javascript.js"></script>
+	<a href="index.html"></a>
   </body>
 </html>
