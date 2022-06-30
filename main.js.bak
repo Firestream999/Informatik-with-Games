@@ -576,29 +576,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     };
 
-  function gameOver() {
 
-        if (current.some(index => blox[currentPosition + index].classList.contains('taken'))) { 
-
-            clearInterval(timerId); 
-
-            startButton.innerHTML = 'Game Over';
-
-            startButton.style.backgroundColor = 'red';
-
-            startButton.style.color = 'white';
-
-            startButton.disabled = true; 
-
-            localStorage.setItem("mostRecentScore", score);
-
-            
-
-            return window.location.assign("index.html"); 
-
-        }
-
-    }
     
 
     function addScore() {
@@ -660,7 +638,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-  
+    function gameOver() {
+
+        if (current.some(index => blox[currentPosition + index].classList.contains('taken'))) { 
+
+            clearInterval(timerId); 
+
+            startButton.innerHTML = 'Game Over';
+
+            startButton.style.backgroundColor = 'red';
+
+            startButton.style.color = 'white';
+
+            startButton.disabled = true; 
+
+            localStorage.setItem("mostRecentScore", score);
+
+            
+
+           
+
+        }
+
+    }
 
 
     
@@ -684,6 +684,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     validateForm();
+	 return window.location.assign("index.html"); 
 
 
 });

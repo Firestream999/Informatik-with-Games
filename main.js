@@ -527,7 +527,7 @@ document.addEventListener('DOMContentLoaded', () => {
     *  would be taken from the gameOver() and passed to a finalScore that could be stored locally 
 
    *************************************************************************************************************/
-
+	localStorage.setItem("username1", 1);
     
 
     const playerName = document.getElementById('playerName');
