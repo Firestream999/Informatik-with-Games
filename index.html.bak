@@ -1,0 +1,14 @@
+<html>
+<link rel="stylesheet" href="stylei.css" />
+<h1> Inhalt </h1>
+<a href="turtle.html">Python Turtle</a><p>
+</p>
+<a href="Chatbot.html">Chatbot</a><p>
+</p>
+<a href="indexT.html">Tetris</a><p>
+</p>
+<a href="info.html">Über diese Seite</a><p>
+</p>
+<a href="html.html">HTML</a><p>
+</p>
+</html>
