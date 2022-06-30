@@ -84,7 +84,7 @@
 
                     <div class="score un-btn">Level : <span id="levels">0</span> </div>
 
-                    <button id="play" class=" score btn">Musik Off </button>
+                    <button id="play" class=" score btn">Music Off </button>
 
                 </div>
 
