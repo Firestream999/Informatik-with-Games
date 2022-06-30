@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log(blox); //checking 
 
-    const startButton = document.getElementById('start-button');
+    const startButton = document.getElementById('Start Button');
 
     let timerId;
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let level = 0;
 
-    const gameMusic = document.getElementById('music');
+    const gameMusic = document.getElementById('musik');
 
     const soundButton = document.getElementById('play');
 
@@ -377,13 +377,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-    const leftButton = document.getElementById('left');
+    const leftButton = document.getElementById('links');
 
-    const rotateButton = document.getElementById('rotate');
+    const rotateButton = document.getElementById('Drehe');
 
-    const rightButton = document.getElementById('right');
+    const rightButton = document.getElementById('rechts');
 
-    const downButton = document.getElementById('down');
+    const downButton = document.getElementById('unten');
 
 
 
