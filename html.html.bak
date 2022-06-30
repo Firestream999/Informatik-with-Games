@@ -3,7 +3,7 @@
 <h1> HTML</h1>
 <p>
 </p>
-<img src="htmlbild.png" " height="500vh">
+<img src="htmlbild.png" " height="800vh">
 </head>
 <body>
 <p>
@@ -38,4 +38,5 @@ Mit PhP kann man viele erweiterungen wie Anmeldungs systheme coden.<p>
 </p>
 </body>
 <a href="index.html">Inhalt</a>
+<script src="knopf.js"></script>
 </html>
