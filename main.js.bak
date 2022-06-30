@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const width = 10;
 
-    console.log(blox); //checking 
+    console.log(blox); //checking to make sure the array is correct
 
-    const startButton = document.getElementById('Start Button');
+    const startButton = document.getElementById('start-button');
 
     let timerId;
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let level = 0;
 
-    const gameMusic = document.getElementById('musik');
+    const gameMusic = document.getElementById('music');
 
     const soundButton = document.getElementById('play');
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
 
-    //  menu
+    // create a function that toggles the hamburger navigation menu
 
     toggle.addEventListener('click', () => {
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // create
+    // create a function that toggles the music on or off using a button click
 
     soundButton.addEventListener('click', () => {
 
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
 
-    
+    //square tetrimino - called b for block
 
     const bTetrimino = [
 
@@ -195,10 +195,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const theTetriminos = [pTetrimino, qTetrimino, sTetrimino, zTetrimino, tTetrimino, bTetrimino, iTetrimino];
 
-    console.log(theTetriminos[0][0]); 
+    console.log(theTetriminos[0][0]); // checking to ensure the tetriminos are output correctly
 
 
-    
+    //create an start position and rotation for the tetrimino
 
     let currentPosition = 4;
 
@@ -207,16 +207,16 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(currentPosition, currentRotation);
 
 
-    
+    //create a random tetrimino and its rotation
 
     let random = Math.floor(Math.random() * theTetriminos.length);
 
     let current = theTetriminos[random][currentRotation];
 
-    console.log(current); 
+    console.log(current); //checking output of current, testing random and currentRotation
 
 
-    //add
+    //add the tetrimino to the grid with a draw function
 
     function draw() {
 
@@ -230,10 +230,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-   
+    //console.log(draw()); //testing to see if a random tetrimino appears on the grid
 
 
-    
+    //remove the tetrimino from the grid with an undraw function
 
     function undraw() {
 
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    
+    // start button acts as start/pause game button
 
     startButton.addEventListener('click', () => {
 
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             timerId = null;
 
-            startButton.innerHTML = 'Game Paused'; 
+            startButton.innerHTML = 'Game Paused'; //change text to show gameplay is paused
 
         } else {
 
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             timerId = setInterval(moveDown, 1000);
 
-            startButton.innerHTML = 'Started'; 
+            startButton.innerHTML = 'Started'; //change text to show gameplay is running
 
             nextRandom = Math.floor(Math.random() * theTetriminos.length);
 
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    //create a function 
+    //create a function to move the tetriminos down the grid
 
     function moveDown() {
 
@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    
+    //create a function that freezes the tetrimino when it hits the bottom of the div
 
     function freeze() {
 
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             current.forEach(index => blox[currentPosition + index].classList.add('taken'));
 
-          
+            //introduce a new tetrimino to the grid
 
             random = nextRandom;
 
@@ -321,13 +321,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    
+    //create a function to move the tetrimino to the left until it reaches the edge of the grid
 
     function moveLeft() {
 
         undraw();
 
-        const leftEdge = current.some(index => (currentPosition + index) % width === 0); 
+        const leftEdge = current.some(index => (currentPosition + index) % width === 0); //check to make sure the tetrimino does not exceed the left edge
 
         if (!leftEdge) currentPosition -= 1;
 
@@ -342,11 +342,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-   
+    //create a function to bind directional movement to the arrow keys on the keyboard
 
     function control(event) {
 
-        event.preventDefault(); 
+        event.preventDefault(); // prevents default screen movement when pressing the arrow keys
 
 
         if (event.keyCode === 37) {
@@ -370,20 +370,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    
+    //create an event listener to listen for keypresses and invoke the control functions
 
     document.addEventListener('keydown', control);
 
 
-    
+    //create event listener to listen for mouse clicks and invoke the control functions
 
-    const leftButton = document.getElementById('links');
+    const leftButton = document.getElementById('left');
 
-    const rotateButton = document.getElementById('Drehe');
+    const rotateButton = document.getElementById('rotate');
 
-    const rightButton = document.getElementById('rechts');
+    const rightButton = document.getElementById('right');
 
-    const downButton = document.getElementById('unten');
+    const downButton = document.getElementById('down');
 
 
 
@@ -412,13 +412,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    
+    //create a function to move the tetrimino to the right until it reaches the edge of the grid
 
     function moveRight() {
 
         undraw();
 
-        const rightEdge = current.some(index => (currentPosition + index) % width === width - 1); 
+        const rightEdge = current.some(index => (currentPosition + index) % width === width - 1); //check to make sure the tetrimino does not exceed the right edge
 
         if (!rightEdge) currentPosition += 1;
 
@@ -433,23 +433,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    
+    //create a function to turn the tetrimino around by a 90 degree rotation
 
     function turnShape() {
 
-        undraw();  
+        undraw(); //undraw the current tetrimino 
 
-        currentRotation++; 
+        currentRotation++; //increment the rotation by 1 turn
 
         if (currentRotation === current.length) {
 
-            currentRotation = 0;  
+            currentRotation = 0; //set new rotation 
 
         }
 
         current = theTetriminos[random][currentRotation];
 
-        draw();  
+        draw(); //draw the new rotation 
 
     }
 
@@ -459,13 +459,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 
-    /** I tried a variety of methods to create a function whereby the players score 
+    
 
-    *  would be taken from the gameOver() and passed to a finalScore that could be stored locally 
-
-   *************************************************************************************************************/
-
-    //create a high score 
+    
 
     const playerName = document.getElementById('playerName');
 
@@ -482,7 +478,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     playerName.addEventListener('keyup', () => {
 
-        saveScoreBtn.disabled = !playerName.value; //save button  
+        saveScoreBtn.disabled = !playerName.value;  
 
     });
 
@@ -507,14 +503,14 @@ document.addEventListener('DOMContentLoaded', () => {
         highScores.splice(3);
 
 
-        localStorage.setItem('highScores', JSON.stringify(highScores));  //stores the players 
+        localStorage.setItem('highScores', JSON.stringify(highScores));  
 
         window.location.assign( ' / '); 
 
     };
 
 
-    //create function 
+    
 
     function addScore() {
 
@@ -575,7 +571,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function gameOver() {
 
-        if (current.some(index => blox[currentPosition + index].classList.contains('taken'))) { 
+        if (current.some(index => blox[currentPosition + index].classList.contains('taken'))) {  
 
             clearInterval(timerId); 
 
@@ -622,5 +618,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
-
-

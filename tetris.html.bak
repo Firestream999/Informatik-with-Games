@@ -596,7 +596,7 @@
 
         support this audio element</audio>
 
-    <script src="assets/js/script.js"></script>
+    <script src="main.js"></script>
 
     <script src="https://kit.fontawesome.com/0fb38816a1.js" crossorigin="anonymous"></script>
 
