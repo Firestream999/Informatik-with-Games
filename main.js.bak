@@ -602,7 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         score += 100; 
 						
-						moveDown += 10000;
+						
 
                         playerScore.innerHTML = score;
 
