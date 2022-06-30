@@ -538,11 +538,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         playerScore.innerHTML = score;
 
                         playerLevel.innerHTML = level;
-					}	
-						if (level += 1) {
-							moveDown += 10;
 
-                    
+                    }
 
                 }
 
