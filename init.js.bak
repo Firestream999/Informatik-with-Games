@@ -1,7 +1,7 @@
 
     (function () {
         var options = {
-            link: "https://www.chatroom2000.de/", 
+            link: "https://stin.to/1bynf", 
             link_color: "#E74339", 
             call_to_action: "Schreibt euch", 
             button_color: "#FF6550", 
