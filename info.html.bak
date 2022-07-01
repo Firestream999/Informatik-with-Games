@@ -1,6 +1,7 @@
 <html>
  <link rel="stylesheet" href="stylei.css" />
 <h1> Infos</h1>
+<link rel="icon" href="bot.png" />
 <p>
 </p>
 <h3> Webseite</h3>
@@ -38,8 +39,8 @@ Ich habe auf diser Webseite einen Chatbot mit hilfe von
  Js(JavaScript) gemacht das wahr sehr schwirig da Js nicht gerade
  wenige Befehle hat. Hier ein ausschnit des Cods:
  <p></p>
- <img src="Cod.png">
-  <img src="Code.png">
+ <img src="Cod.png"></img>
+  <img src="Code.png"></img>
   <p></p>
   <h3>Quellen </h3>
   <p></p>
