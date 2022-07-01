@@ -14,7 +14,7 @@ bestimmte Aufgaben übernimmt und von dem diese ganz oder teilweise
 abhängig sind.
 <link rel="icon" href="server.png" />
 <p> </p>
-<img href="server.png" " height="200vh"></img>
+<img href="server.png"></img>
 <p>
 </p>
 <p>
@@ -39,8 +39,8 @@ Ich habe auf diser Webseite einen Chatbot mit hilfe von
  Js(JavaScript) gemacht das wahr sehr schwirig da Js nicht gerade
  wenige Befehle hat. Hier ein ausschnit des Cods:
  <p></p>
- <img src="Cod.png"></img>
-  <img src="Code.png"></img>
+ <img href="Cod.png"></img>
+  <img href="Code.png"></img>
   <p></p>
   <h3>Quellen </h3>
   <p></p>

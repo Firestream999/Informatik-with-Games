@@ -3,10 +3,12 @@
 <h1> HTML</h1>
 <p>
 </p>
-<img src="ht.png"></img>
 </head>
-<link rel="icon" href="bot.png" />
 <body>
+<img src="ht.png"></img>
+
+<link rel="icon" href="bot.png" />
+
 <p>
 </p>
 <h2> HTML Grundlagen </h2>
