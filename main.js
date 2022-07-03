@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
 
-    //  menu
+    
 
     toggle.addEventListener('click', () => {
 
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // createo 
+     
 
     soundButton.addEventListener('click', () => {
 
